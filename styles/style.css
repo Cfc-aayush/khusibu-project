@@ -1,0 +1,139 @@
+/*Universal Selector*/
+{margin:0px; padding:0px;}
+
+/*ID Selector*/
+#container{
+    width:1320px; min-height :500px;
+    background-color: #FADABB;
+    margin:auto auto;
+}
+
+/*Type Selector*/
+h1{
+    font-size:40px; font-variant: small-caps;
+    color:black;
+    font-family:"Robot Mono";
+    font-weight:900px;
+    letter-spacing:20px;
+}
+
+body {
+    background-color:aqua;
+    background-image: url("../images/fantasy.jpg"), url("../images/fantasyy.jpg");
+    background-repeat: no-repeat,no-repeat;
+    background-size:cover;
+    background-position: center
+    center, top left;
+}
+
+/*Class Selector*/
+.row{
+    min-height:5px;
+}
+.col100{
+    width:100%;
+}
+.col75{
+    width:75%;float:left;
+}
+.col50{
+    width:50%;float:left;
+}
+.col25{
+    width:25%;float:left;
+}
+.clear{
+    clear:both;
+}
+.cornerimg {
+    border-radius: 20px 0px 20px 0px;
+    opacity: 0.7;
+}
+
+/*Psuedo Selector*/
+.cornerimg:hover {
+    opacity: 1;
+    border-left: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+
+main{
+    min-height:50px;
+    background-color: #ffffff;
+    width:100%;
+}
+
+/*Descendent Selector*/
+main ul{
+    list-style-type: none;
+}
+
+#main ul li{
+    display: inline-block;
+    margin:10px;
+    padding:5px;
+}
+
+#main ul li a{
+    text-decoration: none;
+}
+#main ul li a:hover{
+    text-decoration: overline;
+    background-color:antiquewhite;
+    border:1px solid #ffffff;
+}
+
+#social{
+    position:fixed;
+    width:70px;
+    right:0px;
+    background-color: #000000;
+    min-height:150px;
+    top:200px;
+}
+
+#social ul{
+    list-style-type:none;
+}
+
+#social ul li{
+    font-size:30px;
+    margin-bottom:10px;
+    margin-top:5px;
+    margin-left:20px;
+}
+
+#social ul li a{
+    color: #ffffff;
+}
+
+.scrollbox {
+    overflow: auto;
+    width: 205px;
+    height: 300px;
+    border: 2px solid #ff0000;
+    float: left;
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    body{
+        background-color: #ff0000;
+    }
+
+    .colmd100{
+        width:100%;
+    }
+
+    .colmd50{
+        width:50%;
+        float:left;
+    }
+}
+
+@media screen and (min-width:1px) and (max-width;480px){
+    body{
+        background-color:#00ff00;
+    }
+    .colsm100{
+        width:100%;
+    }
+}

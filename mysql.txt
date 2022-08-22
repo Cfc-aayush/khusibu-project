@@ -1,0 +1,3 @@
+ mysql
+admin root
+password khuswi123 (all in lowercase)
